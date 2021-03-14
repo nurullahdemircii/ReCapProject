@@ -1,0 +1,34 @@
+-> Blank Solution
+	->	Add NewProject
+		->	DataAccess
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr. 
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	Business
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr. 
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	Entities
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr.
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	ConsoleUI
+			*	Set as StartUp Project (Projenin ConsoleUI ile baþlayacaðý belirtilir.)
