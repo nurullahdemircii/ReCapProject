@@ -32,3 +32,14 @@
 						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
 		->	ConsoleUI
 			*	Set as StartUp Project (Projenin ConsoleUI ile baþlayacaðý belirtilir.)
+
+
+->	Entities = 
+	->	IEntity = Interface
+		*	IEntity implement eden class bir veritabaný tablosudur.
+		*	IEntity bir veri tabaný nesnesidir.
+->	DataAccess = Veri Eriþimi
+	*	Veri Eriþimi yapýlacak alandýr.
+	*	Entity de oluþturulan nesnelerin Interfaceleri DataAccess Abstract ta oluþturulmalýdýr.
+->	Business = Ýþ Kurallarý
+	*	Ýlk yapýlan iþlem tabiki interface oluþturmaktýr.
