@@ -16,6 +16,23 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        public Car Add(Car car)
+        {
+            if (car.CarName.Length <= 2)
+            {
+                Console.WriteLine("Araba İsmi 2 karakterden fazla olmalıdır!");
+            }
+            if (car.DailyPrice <= 0)
+            {
+                Console.WriteLine("Günlük Fiyat 0₺'den Büyük olmak zorundadır!");
+                //return new ErrorResult(Messages.Error);
+            }
+            _carDal.Add(car);
+            Console.WriteLine("Yeni Araba Eklendi.");
+            return car;
+            //return new SuccessResult(Messages.CarAdded);
+        }
+
         public List<Car> GetAll()
         {
             // İş kodları

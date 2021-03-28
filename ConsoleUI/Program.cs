@@ -1,6 +1,7 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
+using Entities.Concrete;
 using System;
 
 namespace ConsoleUI
@@ -19,6 +20,7 @@ namespace ConsoleUI
             {
                 Console.WriteLine(car.CarName);
             }
+            carManager.Add(new Car { BrandId = 1, ColorId = 1, CarName = "BMW 520i", ModelYear = "2015", DailyPrice = 350, Description = "2015 Model BMW 520i"});
         }
     }
 }
